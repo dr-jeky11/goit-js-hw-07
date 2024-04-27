@@ -34,5 +34,3 @@ const imageMarkUp = images.map(image => {
   imgEl.alt = image.alt;
   listItem.append(imgEl);
 });
-
-console.log(galleryList);
