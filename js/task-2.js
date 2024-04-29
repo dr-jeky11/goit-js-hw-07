@@ -26,11 +26,11 @@ const images = [
 ];
 
 const galleryList = document.querySelector("ul");
-const imageMarkUp = images.map(image => {
-  const listItem = document.createElement("li");
-  galleryList.append(listItem);
-  const imgEl = document.createElement("img");
-  imgEl.src = image.url;
-  imgEl.alt = image.alt;
-  listItem.append(imgEl);
-});
+const galerry = document.querySelector(".gallery");
+
+const galerryList = images.map((image) => {
+    return `<li><img class='gallery-img' src="${image.url}" alt="${image.alt}"></li>`;
+  })
+  .join("");
+
+galerry.insertAdjacentHTML("beforeend", galerryList);
