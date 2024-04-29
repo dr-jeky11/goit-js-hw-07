@@ -25,7 +25,7 @@ function createBoxes(qty) {
   let boxSize = 30;
   for (let i = 0; i < qty; i++) {
     boxesArray.push(
-      `<div style='background-color: ${getRandomHexColor()}; width:${boxSize}px; height:${boxSize}px;'></div>`
+      `<div style='background-color: ${getRandomHexColor()}; width:${boxSize}px; height:${boxSize}px; margin-right:44px'></div>`
     );
     boxSize += 10;
   }
