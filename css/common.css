@@ -1,10 +1,11 @@
 * {
   box-sizing: border-box;
+  list-style-type: none;
 }
 
 body {
   margin: 16px;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fafafa;
@@ -12,10 +13,45 @@ body {
   line-height: 1.5;
 }
 
+#categories {
+  border-radius: 5px;
+}
+
+#categories h2 {
+  color: #2e2f42;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.item {
+  padding: 16px;
+  background: #f6f6fe;
+  margin-bottom: 24px;
+  border-radius: 10px;
+}
+
+.item ul {
+  padding-left: 0;
+}
+
+.item li {
+  color: #2e2f42;
+  border: 1px solid #808080;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  padding: 8px 0 8px 16px;
+  margin-bottom: 8px;
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  list-style-type: none;
   padding: 100px 140px;
   row-gap: 48px;
   column-gap: 24px;
